@@ -1,2 +1,3 @@
 # bunyan-transport
-Bunyan transport for logentries
+Bunyan transport stream for logentries
+More streams to be supported.
