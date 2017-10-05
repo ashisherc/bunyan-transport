@@ -23,10 +23,9 @@ const logger = bunyan.createLogger({
 
 logger.error("error got logged in logentries");
 ```
-
-Logentries
-[logentries](https://i.imgur.com/Yl06kB8.png)
-
+---
+![](https://i.imgur.com/Yl06kB8.png)
+---
 
 ### Options
 ```
@@ -37,8 +36,8 @@ host : optional
 ```
 
 # To do
-More website support
-Option to filter log fields to be sent to logentries 
+* More website support
+* Option to filter log fields to be sent to logentries 
 
 ### Contribute
 Currently bunyan-transport supports only logentries stream, other log website support to be added. Feel free to contribute.
