@@ -56,5 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env
+*.log
+/lib
+.gobble
 .gobble-build
-lib
+.gobble-watch
