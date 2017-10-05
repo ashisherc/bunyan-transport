@@ -14,6 +14,15 @@ class logentriesStream extends Writable {
   }
 
   _write(log, enc, cb) {
+    const levels = {
+      10: 'trace',
+      20: 'debug',
+      30: 'info',
+      40: 'warn',
+      50: 'error',
+      60: 'fatal'
+    }
+    log.level = levels[log.level];
     this.logger.log(JSON.stringify(log));
     setImmediate(cb);
   }
