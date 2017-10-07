@@ -1,6 +1,6 @@
 {
   "name": "bunyan-transport",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Bunyan transport stream for logentries",
   "main": "lib/index.js",
   "scripts": {
