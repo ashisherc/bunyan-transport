@@ -8,9 +8,9 @@ class logentriesStream extends Writable {
       objectMode: true
     });
 
-    const loggerOpts = _.clone(opts || {});
-
-    this.logger = new Logger(loggerOpts);
+    this.loggerOpts = _.clone(opts || {});
+    // TODO create options object with only fields for Logger
+    this.logger = new Logger(this.loggerOpts);
   }
 
   _write(log, enc, cb) {
@@ -23,6 +23,11 @@ class logentriesStream extends Writable {
       60: 'fatal'
     }
     log.level = levels[log.level];
+    if (this.loggerOpts.exclude) {
+      for(var key of this.loggerOpts.exclude){
+        delete log[key];
+      }
+    }
     this.logger.log(JSON.stringify(log));
     setImmediate(cb);
   }
