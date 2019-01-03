@@ -2,7 +2,7 @@ import { Writable } from 'stream';
 import _ from 'lodash';
 import Logger from './logger';
 
-class logentriesStream extends Writable {
+class LogentriesStream extends Writable {
   constructor(opts) {
     super({
       objectMode: true
@@ -33,4 +33,4 @@ class logentriesStream extends Writable {
   }
 }
 
-export { logentriesStream as default };
+export { LogentriesStream as default };

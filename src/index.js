@@ -1,5 +1,5 @@
-import logentriesStream from './logentries/logentriesStream';
+import LogentriesStream from './logentries/logentriesStream';
 
 export {
-    logentriesStream,
+    LogentriesStream,
 };
