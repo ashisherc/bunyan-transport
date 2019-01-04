@@ -26,7 +26,7 @@
   "homepage": "https://github.com/ashisherc/bunyan-transport#readme",
   "dependencies": {
     "babel-runtime": "6.6.1",
-    "lodash": "3.9.3",
+    "lodash": "^4.17.5",
     "reconnect-core": "1.3.0"
   },
   "devDependencies": {
