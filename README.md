@@ -12,7 +12,7 @@ npm install bunyan-transport --save
 const bunyan = require('bunyan');
 const bunyanTransport = require('bunyan-transport');
 
-const logentriesStream = new bunyanTransport.logentriesStream({
+const logentriesStream = new bunyanTransport.LogentriesStream({
   token: 'token',
   exclude : ["pid"]  // to prevent pid from logged in logentries
 });
